@@ -13,4 +13,5 @@ def username(user):
     response = requests.get(url, headers=headers)
     if response.status_code == 200:
         if 'statuscode":10221' in response.text.lower():
-            print("ok")
+            return  False
+        return True
