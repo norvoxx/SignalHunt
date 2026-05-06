@@ -1,5 +1,4 @@
 import requests
-from bs4 import BeautifulSoup
 
 class Github:
     def __init__(self, username:str)->None:
