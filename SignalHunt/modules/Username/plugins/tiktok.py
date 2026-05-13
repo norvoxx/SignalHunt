@@ -9,8 +9,10 @@ def username(user):
         "sec-fetch-dest": "document",
         "Connection": "keep-alive",
     }
+
     url = f"https://www.tiktok.com/@{user}"
     response = requests.get(url, headers=headers)
+
     if response.status_code == 200:
         if 'statuscode":10221' in response.text.lower():
             return  False

@@ -1,0 +1,45 @@
+/* Importation de Montserrat via Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+@font-face {
+    font-family: 'MaPolice';
+    src: url('./assets/fonts/aquire-font/AquireBold-8Ma60.otf') format('opentype');
+    font-weight: normal;
+}
+
+:root {
+    --color-background: #1E1E1E; /* Ton fond sombre actuel */
+    --color-surface: #242824;    /* Pour les cartes, les headers, les inputs */
+    --color-alpha: #FF3203;      /* Ton orange/rouge électrique (Accents) */
+    --color-alpha-low: rgba(255, 50, 3, 0.1); /* Pour des effets de survol (hover) */
+
+    --color-text-main: #E0E0E0;  /* Blanc cassé pour le corps de texte (moins fatigant) */
+    --color-text-dim: #9BA39B;   /* Gris pour les textes secondaires ou légendes */
+    --color-text-bright: #FFFFFF; /* Pour les titres en Aquire */
+
+    --color-border: #333833;     /* Bordures discrètes */
+    --color-success: #4CAF50;    /* Pour les messages de réussite */
+    --color-error: #FF5252;      /* Pour les erreurs */
+
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--color-background);
+    color: var(--color-text-main);
+    line-height: 1.6;
+}
+
+h1, h2 {
+    font-family: 'MaPolice', sans-serif;
+    color: var(--color-alpha);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
