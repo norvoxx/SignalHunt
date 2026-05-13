@@ -1,7 +1,5 @@
 import styled, { keyframes } from 'styled-components';
 
-
-
 export const Input = styled.input`
     width: 100%;
     padding: 10px  12px;
@@ -21,5 +19,4 @@ export const Input = styled.input`
     &:focus {
         border-color: var(--color-success);
     }
-    
 `;

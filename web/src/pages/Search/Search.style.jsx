@@ -10,25 +10,21 @@ export const ContainerSearch = styled.form`
     background-size: 60px 60px;
     -webkit-mask-image: linear-gradient(to bottom, var(--color-background) 80%, transparent 100%);
     mask-image: linear-gradient(to bottom, var(--color-background) 80%, transparent 100%);
-
+    
     .from {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
 
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end; /* correction */
+        
 
-        gap: 1rem;
         width: 90%;
         max-width: 600px;
     }
 
     h1 {
         font-size: 2.5rem;
-        text-align: right;
     }
 
     @media (max-width: 768px) {
@@ -60,7 +56,7 @@ export const ContainerSearch = styled.form`
 export const Container = styled.div`
     display: flex;
     flex-direction: row;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     
     @media (max-width: 768px) {
