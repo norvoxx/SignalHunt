@@ -2,7 +2,7 @@ import requests
 from modules.Username.base import BaseSocialMedia
 
 class TikTok(BaseSocialMedia):
-    name = "TikTok"
+    name = "tiktok"
     is_plugin = True
 
     def __init__(self, username: str) -> None:

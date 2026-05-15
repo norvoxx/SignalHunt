@@ -1,7 +1,6 @@
 import requests
 from modules.Username.base import BaseSocialMedia
 
-
 class Github(BaseSocialMedia):
     name = "github"
     is_plugin = True

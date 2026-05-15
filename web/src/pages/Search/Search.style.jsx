@@ -4,13 +4,18 @@ export const ContainerSearch = styled.form`
     position: relative;
     width: 100%;
     height: 60vh;
+
     background-image:
             linear-gradient(to right, var(--color-surface) 1px, transparent 1px),
             linear-gradient(to bottom, var(--color-surface) 1px, transparent 1px);
+
     background-size: 60px 60px;
+
     -webkit-mask-image: linear-gradient(to bottom, var(--color-background) 80%, transparent 100%);
     mask-image: linear-gradient(to bottom, var(--color-background) 80%, transparent 100%);
-    
+
+    z-index: 1; /* important */
+
     .from {
         position: absolute;
         top: 50%;
