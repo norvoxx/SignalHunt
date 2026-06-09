@@ -3,6 +3,21 @@ from bs4 import BeautifulSoup
 from modules.Username.base import BaseSocialMedia
 
 class Instagram(BaseSocialMedia):
+    """
+    Instagram plugin
+    Attributes:
+        username (str): Instagram username
+            url (str): Instagram url
+            exist (bool): Whether or not the plugin exists
+            requestData(dict): A dictionary containing data about the plugin)
+
+        Methods:
+            getImageProfil(username): Returns the avatar of the username
+            getFollowers(username): Returns the followers of the username
+            getFollowing(username): Returns the following of the username
+            getAvatar(username): Returns the avatar of the username
+            API(username): Returns the avatar of the username
+    """
     name = "instagram"
     def __init__(self,username):
         super().__init__(username)
