@@ -25,7 +25,8 @@ print(f"Nombre de module charger \033[92m{len(plugins)} \033[00m")
 print(f"Rechereh sur le speudo : {NAME} or {NAME_LIST}")
 print("\n1 : Recherche speudo\n2 : Use spcifique module")
 
-choix = int(input("\nQuelle est votre choix : "))
+# choix = int(input("\nQuelle est votre choix : "))
+choix = 1
 
 if choix == 2:
     print("\n=== PLUGINS DISPONIBLES ===")
